@@ -18,6 +18,8 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+.metadata/
+/.metadata/
 
 
 #Project 

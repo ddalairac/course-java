@@ -1,0 +1,4 @@
+texto para leer desde la clase file
+y pruebo como lee
+varias lineas
+
