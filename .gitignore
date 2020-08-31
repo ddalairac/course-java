@@ -1,0 +1,42 @@
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDEs and editors
+/.idea
+*.iws
+*.iml
+*.ipr
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.MF
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+
+#Project 
+#-----------------------------------------------------------------------------------------
+
+# Java project
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+.settings/*
+*.settings
+*.factorypath
+*.classpath
+*.Project
+.apt_generated
+.springBeans
+.sts4-cache
+
+
+#target folders
+/target/
