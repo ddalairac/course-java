@@ -12,14 +12,7 @@ public class Files {
 //		fileScanner();
 //		fileReader();
 		fileReader2();
-		
-//		StockFileReader fr = new StockFileReader("table.csv");
-//		try {
-//			List<HashMap<String,Double>> dataResult  = StockFileReader.populateStockFileData(fr.getHeaders(), fr.readFileData());
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+	
 	}
 
 	public static void fileScanner() {
