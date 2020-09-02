@@ -40,16 +40,26 @@ public class DataTypes {
 		
 		// COLECTIONS
 		/* No se pueden usar los primitivos como tipo, Hay clases para definirlos (ej: int => Integer) 
-		 * No es necesario repetir el tipo, al crear la instancia.  Funciona igual*/
+		 * No es necesario repetir el tipo, al crear la instancia.*/
+		
+		//List Collections (Hay idems duplicados, orden de insercion por default)
 		ArrayList<String> arrList = new ArrayList<>();						// Implementa Arrays: mas rapido para recorrerlo
 		LinkedList<Integer> linkList = new LinkedList<>();   				// Double linkedList: Mas rapido para agregar y quitar items
 		LinkedList<Veicle> veicles = new LinkedList<>();   					// custom obj type
-		HashSet<Integer> hash = new HashSet<>();   							// Hash: evita items duplicados. Siempre esta ordenada
-		LinkedHashSet<Integer> linkhash = new LinkedHashSet<>(); 			// Hash: evita items duplicados. Mantiene orden original
-		HashMap<String,Integer> dictionarySorted = new HashMap<>();			// Map <Key,Value>. Siempre esta ordenado (no puede haber duplicados, sobreescribe)
-		LinkedHashMap<String,Integer> dictionary = new LinkedHashMap<>();	// Map <Key,Value>. Mantiene orden original (no puede haber duplicados, sobreescribe)
+		Vector<Integer> vectorList = new Vector<>(); 
 		
+		//Set Collections (No hay items duplicados)
+		HashSet<Integer> hash = new HashSet<>();   							// Siempre esta ordenada
+		LinkedHashSet<Integer> linkhash = new LinkedHashSet<>(); 			// Mantiene orden original
+		TreeSet<Integer> treeset; 
+		SortedSet <Integer> sortedset ; 
 		
+		// Maps
+		HashMap<String,Integer> dictionarySorted = new HashMap<>();			// Siempre esta ordenado (no puede haber duplicados, sobreescribe)
+		LinkedHashMap<String,Integer> dictionary = new LinkedHashMap<>();	// Mantiene orden original (no puede haber duplicados, sobreescribe)
+		Hashtable<String,Integer> hashtable = new Hashtable<>();
+		TreeMap<String,Integer> treemap  = new TreeMap<>();
+		SortedMap<String,Integer> sortedmap  = new TreeMap<>();
 		
 		
 	}

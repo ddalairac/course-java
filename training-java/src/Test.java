@@ -10,7 +10,9 @@ public class Test {
 		Scanner input = new Scanner(System.in);
 		String enteredText = input.nextLine();
 		System.out.println("Texto ingresado: "+enteredText);
-		
+
+		GenericClassEj<String,Integer> genericClass = new GenericClassEj("hola",19);
+		System.out.println(genericClass);
 	}
 
 }
