@@ -10,7 +10,6 @@ import fileprocessors.StockFileApplication;
 import fileprocessors.StockFileReader;
 
 public class AggregatorProcessor {
-
 	public List<HashMap<String,Double>> dataResult;
 	public List<String> colNames;
 	
@@ -59,5 +58,4 @@ public class AggregatorProcessor {
 		}
 	}
 	
-
 }

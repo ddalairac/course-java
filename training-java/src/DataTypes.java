@@ -13,6 +13,8 @@ public class DataTypes {
 		boolean someBoolean = false;//1 bit
 		char someChar = 'c';  		//2 bytes
 		
+		Number num = 1;				// hay que parciar el numero para usarlo
+		
 		
 		// OBJECTS
 		String someText = "texto";

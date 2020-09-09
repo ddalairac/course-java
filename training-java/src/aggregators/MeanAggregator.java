@@ -5,9 +5,14 @@ import java.util.List;
 
 public class MeanAggregator extends Aggregator{
 
-	public MeanAggregator(List<Double> numbers) {
-		this.numbers = new ArrayList<Double>(numbers);
+
+	public MeanAggregator() {
+		super();
 	}
+	public MeanAggregator(List<Double> numbers) {
+		super(numbers);
+	}
+	
 	public double calculate() {
 		double result = 0;
 		if(!numbers.isEmpty()){
@@ -20,7 +25,6 @@ public class MeanAggregator extends Aggregator{
 		return result;
 	}
 
-	@Override
 	public List<Double> getValues() {
 		return numbers;
 	}

@@ -8,11 +8,11 @@ public abstract class Aggregator {
 	List<Double> numbers;
 	
 	public Aggregator(){
-		numbers = new ArrayList<Double>();
+		this.numbers = new ArrayList<Double>();
 	}
 	
 	public Aggregator(List<Double> numbers){
-		numbers = new ArrayList<Double>(numbers);
+		this.numbers = new ArrayList<Double>(numbers);
 	}
 	
 	/**
@@ -20,7 +20,7 @@ public abstract class Aggregator {
 	 * 
 	 */
 	public void add(double number) {
-		numbers.add(number);
+		this.numbers.add(number);
 	}
 	/**
 	 * Any class that is a derivative of the abstract class
