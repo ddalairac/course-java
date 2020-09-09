@@ -14,7 +14,11 @@ public class CollectionsEj {
 		LinkedHashSet<Integer> linkhash = new LinkedHashSet<>(); 			// Hash: evita items duplicados. Mantiene orden original
 		HashMap<String,Integer> dictionarySorted = new HashMap<>();			// Map <Key,Value>. Siempre esta ordenado (no puede haber duplicados, sobreescribe)
 		LinkedHashMap<String,Integer> dictionary = new LinkedHashMap<>();	// Map <Key,Value>. Mantiene orden original (no puede haber duplicados, sobreescribe)
-				
+		LinkedList<? extends Veicle> whildcardUpper = new LinkedList<>();	// Whildcard Upper, Lista de objetos que extienden o implementan X class
+		LinkedList<? super Veicle> whildcardLower = new LinkedList<>();		// Whildcard Lower, Lista de objetos de x class o sus padres
+		
+		
+		
 		arrList.add("Radio");
 		arrList.add("Alarm");
 //				arrList.remove(0);
@@ -63,6 +67,7 @@ public class CollectionsEj {
 		dictionarySorted = new HashMap<String,Integer>(dictionary);
 		System.out.println("dictionary: "+dictionary);
 		System.out.println("dictionarySorted: "+dictionarySorted);
+		
 //		for(String warrior: dictionary.keySet()) { // itera key
 		for(Map.Entry<String,Integer> warrior: dictionary.entrySet()) {	// itera key & value
 			System.out.println(warrior.getKey() + ": " +warrior.getValue());
