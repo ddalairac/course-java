@@ -1,9 +1,13 @@
 package aggregators;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MeanAggregator extends Aggregator{
-	
+
+	public MeanAggregator(List<Double> numbers) {
+		this.numbers = new ArrayList<Double>(numbers);
+	}
 	public double calculate() {
 		double result = 0;
 		if(!numbers.isEmpty()){

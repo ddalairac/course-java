@@ -6,7 +6,7 @@ import java.util.List;
 public class MaxAggregator extends Aggregator{
 	
 	public MaxAggregator(List<Double> numbers) {
-		this.numbers = new ArrayList<Double>();
+		this.numbers = new ArrayList<Double>(numbers);
 	}
 
 	@Override
